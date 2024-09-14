@@ -1,2 +1,8 @@
 # Manpower-Downtime-Tracker-Application
-A Python-based Flask application to monitor employee downtime during lunch breaks using a scanning system. The application displays the number of employees out for lunch, the number of returned, the live time against their IDs who are out, and also the IDs whose time crossed 45 minutes. First time any employee ID is scanned, the ID is displayed along with the live time since the ID was scanned, and next time the same ID is entered, then that ID is removed from the list. However if the ID is scanned after 45 minutes, then the delayed ID will be shown separately in another list as delayed arrivals. One can 
+A Python-based Flask application to monitor employee downtime during lunch breaks using a scanning system. This Flask-based application tracks employee lunch breaks in real-time. It displays the following features:
+
+Live Tracking: The application records and displays employee IDs when they first scan out for lunch, along with a live timer showing the elapsed time since their scan.
+Returned Employees: When an employee scans their ID again after lunch, their ID is removed from the live tracking list, indicating they've returned.
+Delayed Arrivals: If an employee scans back in after 45 minutes, their ID is flagged and moved to a separate "Delayed Arrivals" list.
+Real-Time Monitoring: The application continuously updates to reflect the current status of employees out for lunch and those returned.
+Database Management: A "Clear Database" button allows users to reset all stored data easily.
